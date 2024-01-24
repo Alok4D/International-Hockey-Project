@@ -9,9 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -26,154 +24,205 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+      }
+      .font-manrope{
+          font-family: 'Manrope', sans-serif;
+      }
+  </style>
   </head>
-  <body>
-  <!-- Header Section -->
-  <header>
-    <div class="navbar bg-[#FFF] mt-14">
-
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+  <body  class="font-manrope">
+    <!-- Header Section -->
+    <header>
+      <div class="navbar bg-[#FFF] mt-14">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>About</a>
+                <ul class="p-2">
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                </ul>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
-            <li>
-              <a>About</a>
-              <ul class="p-2">
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-              </ul>
-            </li>
+          <h1 class="text-4xl text-black font-extrabold">
+            Hockey<span class="text-orange-600">'</span>s
+          </h1>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <h1 class=" text-4xl text-black font-extrabold">Hockey<span class="text-orange-600">'</span>s</h1>
+
+        <div class="navbar-end gap-4">
+          <button class="">
+            <img src="Images/Icon/search.png" alt="" class="h-8" />
+          </button>
+          <button class="btn btn-error text-white font-extrabold">
+            Get Ticket
+          </button>
+        </div>
       </div>
-
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-lg">
-          <li><a class="text-[#FF4240]">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Pages</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="navbar-end gap-4">
-        <button class=""><img src="Images/Icon/search.png" alt="" class="h-8"></button>
-        <button class="btn btn-error text-white font-extrabold">Get Ticket</button>
-      </div>
-
-    </div>
-  </header>
-
-  
-
-     
-    <header>
-      <nav class="flex justify-around mt-14">
-        <div>
-          <h1>Hockey’s</h1>
-        </div>
-        <div>
-          <ul class="flex gap-6">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="flex justify-center items-center gap-5">
-          <p><i class="fa-solid fa-magnifying-glass"></i></p>
-          <button class="btn btn-primary">Get Ticket</button>
-        </div>
-      </nav>
-       Hockey Banner Section
-      <!-- <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div> -->
-  
     </header>
+    <!-- Header Section End -->
 
     <main>
+       <!-- Hockey Banner Section -->
+      <section class="banner-section">
+        <div class="container mx-auto my-12 flex flex-col flex-grow gap-3 lg-flex-row lg:justify-center pb-10 border-b-2">
+            <div class="carousel w-[80%] ">
+                <div id="slide1" class="carousel-item relative w-full ">
+                <img src="./Images/1.png" class="w-full" />
+                <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section-1.1 container bg-[#131318] text-white w-10/12 rounded-md lg:absolute lg:w-4/12 p-5 lg:translate-y-36 lg:translate-x-96 ">
+            <h3 class="text-xl font-bold mb-3">Meet all the heroes from the field</h3>
+            <p class="text-sm font-semibold">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+    </section>
+    <!-- Hockey Banner Section End -->
+
+
+
+
       <!-- Program Sections -->
       <section class="sec-3">
         <div class="sec3-text-sec mx-auto my-12 justify-center pb-7 border-b-2">
-            <h2 class="text-center text-4xl font-extrabold mb-3">Program Sections</h2>
-            <p class=" text-[#13131899] font-bold w-full text-[16px] mx-auto text-center ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+          <h2 class="text-center text-4xl font-extrabold mb-3">
+            Program Sections
+          </h2>
+          <p
+            class="text-[#13131899] font-bold w-full text-[16px] mx-auto text-center"
+          >
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
-        
-        <div class="container mx-auto my-12 flex flex-col flex-grow lg:grid lg:grid-cols-2  gap-4 lg:w-[1170px]">
 
-            <!-- first row -->
-            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)), url(./Images/2.png) ;" class="s3-img1  h-[338px] rounded-lg">
-                <div class="sec3-img-txt-sec1 p-10 ">
-                    <h2 class="text-white text-3xl font-semibold my-4">Junior Program</h2>
-                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
-                </div>
+        <div
+          class="container mx-auto my-12 flex flex-col flex-grow lg:grid lg:grid-cols-2 gap-4 lg:w-[1170px]"
+        >
+          <!-- first row -->
+          <div
+            style="
+              background: radial-gradient(transparent, rgb(31, 30, 30)),
+                url(./Images/2.png);
+            "
+            class="s3-img1 h-[338px] rounded-lg"
+          >
+            <div class="sec3-img-txt-sec1 p-10">
+              <h2 class="text-white text-3xl font-semibold my-4">
+                Junior Program
+              </h2>
+              <p class="text-white text-[16px] text-left">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="btn btn-primary text-white text-[16px] font-semibold my-6"
+              >
+                Register Now
+              </button>
             </div>
-            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)),url(./Images/3.png);" class="s3-img2 h-full rounded-lg">
-                <div class="sec3-img-txt-sec1 p-10 ">
-                    <h2 class="text-white text-3xl font-semibold my-4">Teenager Program</h2>
-                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
-                </div>
-            
+          </div>
+          <div
+            style="
+              background: radial-gradient(transparent, rgb(31, 30, 30)),
+                url(./Images/3.png);
+            "
+            class="s3-img2 h-full rounded-lg"
+          >
+            <div class="sec3-img-txt-sec1 p-10">
+              <h2 class="text-white text-3xl font-semibold my-4">
+                Teenager Program
+              </h2>
+              <p class="text-white text-[16px] text-left">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="btn btn-primary text-white text-[16px] font-semibold my-6"
+              >
+                Register Now
+              </button>
             </div>
+          </div>
 
-            <!-- second row -->
-            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)), url(./Images/4.png) ;" class="s3-img3 w-[1170px] h-[450px] rounded-lg">
-
-                <div class="sec3-img-txt-sec1 w-[495px] mt-20 p-10 ">
-                    <h2 class="text-white text-3xl font-semibold my-4">Professional Program</h2>
-                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
-                </div>
+          <!-- second row -->
+          <div
+            style="
+              background: radial-gradient(transparent, rgb(31, 30, 30)),
+                url(./Images/4.png);
+            "
+            class="s3-img3 w-[1170px] h-[450px] rounded-lg"
+          >
+            <div class="sec3-img-txt-sec1 w-[495px] mt-20 p-10">
+              <h2 class="text-white text-3xl font-semibold my-4">
+                Professional Program
+              </h2>
+              <p class="text-white text-[16px] text-left">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="btn btn-primary text-white text-[16px] font-semibold my-6"
+              >
+                Register Now
+              </button>
             </div>
-           
+          </div>
         </div>
-    </section>
+      </section>
     </main>
 
-
-
-    <footer>
-     
-    </footer>
+    <footer></footer>
   </body>
 </html>

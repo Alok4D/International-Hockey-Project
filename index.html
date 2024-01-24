@@ -28,7 +28,51 @@
     />
   </head>
   <body>
-    
+  <!-- Header Section -->
+  <header>
+    <div class="navbar bg-[#FFF] mt-14">
+
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li>
+              <a>About</a>
+              <ul class="p-2">
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <h1 class=" text-4xl text-black font-extrabold">Hockey<span class="text-orange-600">'</span>s</h1>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg">
+          <li><a class="text-[#FF4240]">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-4">
+        <button class=""><img src="Images/Icon/search.png" alt="" class="h-8"></button>
+        <button class="btn btn-error text-white font-extrabold">Get Ticket</button>
+      </div>
+
+    </div>
+  </header>
+
+  
+
+     
     <header>
       <nav class="flex justify-around mt-14">
         <div>
@@ -48,167 +92,82 @@
           <button class="btn btn-primary">Get Ticket</button>
         </div>
       </nav>
-      <!-- Hockey Banner Section -->
-
-      <div id="gallery" class="relative w-full mt-14" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="Images/1.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Hockey Photo"
-            />
+       Hockey Banner Section
+      <!-- <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-          <!-- Item 2 -->
-          <div class="duration-700 ease-in-out" data-carousel-item="active">
-            <img
-              src="Images/1.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt=""
-            />
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
-          <!-- Item 3 -->
-          <div class="duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="Images/1.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt=""
-            />
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
-          <!-- Item 4 -->
-          <div class="duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="Images/1.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt=""
-            />
-          </div>
-          <!-- Item 5 -->
-          <div class="duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="Images/1.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt=""
-            />
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
-
-        <!-- Slider controls -->
-        <button
-          type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5 8.25 12l7.5-7.5"
-              />
-            </svg>
-
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-
-        <button
-          type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <!-- <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg> -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
+      </div> -->
+  
     </header>
 
     <main>
       <!-- Program Sections -->
-      <section>
-        <div>
-          <h2 class="text-[#131318] text-center text-5xl font-extrabold">Program Sections</h2>
-          <p class="text-[#413f3f] text-1xl flex justify-center items-center mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-        </div>
-
-        <div class="flex justify-center items-center gap-6">
-         
-         <div class="bg-cover" style="background-image: url(Images/2.png); height: 338px; width: 573px;">
-            <div class="ml-10">
-              <h2 class="text-[#FFF] text-3xl font-extrabold pt-20 pb-4">Junior Program</h2>
-              <p class="text-[#FFF] text-1xl">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="bg-[#FF4240] rounded-lg inline-flex py-1 px-2 justify-center items-center gap-3 text-[#FFF] text-2xl font-bold mt-5 pt-2 pb-2 pl-5 pr-5">Register Now!</button>
-            </div>
-         </div>
-            <div class="bg-cover" style="background-image: url(Images/3.png); height: 338px; width: 573px;">
-             <div class="ml-10">
-              <h2 class="text-[#FFF] text-3xl font-extrabold pt-20 pb-4">Junior Program</h2>
-              <p class="text-[#FFF] text-1xl">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="bg-[#FF4240] rounded-lg inline-flex py-1 px-2 justify-center items-center gap-3 text-[#FFF] text-2xl font-bold mt-5 pt-2 pb-2 pl-5 pr-5">Register Now!</button>
-             </div>
-            </div>
-          
-  
-        </div>
-
-        <div class="bg-cover" style="background-image: url(Images/4.png); height: 450px; width: 1170px; margin: 0 auto; margin-top: 24px;">
-          <div class="ml-10">
-          <h2 class="text-[#FFF] text-3xl font-extrabold pt-60 pb-4">Professional Program</h2>
-          <p class="text-[#FFF] text-1xl">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-          <button class="bg-[#FF4240] rounded-lg inline-flex py-1 px-2 justify-center items-center gap-3 text-[#FFF] text-2xl font-bold mt-5 pt-2 pb-2 pl-5 pr-5">Register Now!</button>
-         </div>
+      <section class="sec-3">
+        <div class="sec3-text-sec mx-auto my-12 justify-center pb-7 border-b-2">
+            <h2 class="text-center text-4xl font-extrabold mb-3">Program Sections</h2>
+            <p class=" text-[#13131899] font-bold w-full text-[16px] mx-auto text-center ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
         </div>
         
-      </section>
+        <div class="container mx-auto my-12 flex flex-col flex-grow lg:grid lg:grid-cols-2  gap-4 lg:w-[1170px]">
+
+            <!-- first row -->
+            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)), url(./Images/2.png) ;" class="s3-img1  h-[338px] rounded-lg">
+                <div class="sec3-img-txt-sec1 p-10 ">
+                    <h2 class="text-white text-3xl font-semibold my-4">Junior Program</h2>
+                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
+                </div>
+            </div>
+            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)),url(./Images/3.png);" class="s3-img2 h-full rounded-lg">
+                <div class="sec3-img-txt-sec1 p-10 ">
+                    <h2 class="text-white text-3xl font-semibold my-4">Teenager Program</h2>
+                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
+                </div>
+            
+            </div>
+
+            <!-- second row -->
+            <div style="background: radial-gradient(transparent, rgb(31, 30, 30)), url(./Images/4.png) ;" class="s3-img3 w-[1170px] h-[450px] rounded-lg">
+
+                <div class="sec3-img-txt-sec1 w-[495px] mt-20 p-10 ">
+                    <h2 class="text-white text-3xl font-semibold my-4">Professional Program</h2>
+                    <p class="text-white text-[16px] text-left">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-primary text-white  text-[16px] font-semibold my-6">Register Now</button>
+                </div>
+            </div>
+           
+        </div>
+    </section>
     </main>
 
 

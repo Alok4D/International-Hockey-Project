@@ -72,8 +72,7 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <h1 class="text-4xl text-black font-extrabold">
-            Hockey<span class="text-orange-600">'</span>s
+          <h1 class="lg:text-4xl text-2xl text-black font-extrabold">Hockey<span class="text-orange-600">'</span>s
           </h1>
         </div>
 
@@ -89,11 +88,9 @@
 
         <div class="navbar-end gap-4">
           <button class="">
-            <img src="Images/Icon/search.png" alt="" class="h-8" />
+            <img src="Images/Icon/search.png" alt="" class="h-8 hidden lg:block" />
           </button>
-          <button class="btn btn-error text-white font-extrabold">
-            Get Ticket
-          </button>
+          <button class="md:btn-lg btn-sm btn btn-error text-white font-extrabold">Get Ticket</button>
         </div>
       </div>
     </header>
@@ -104,61 +101,68 @@
        <section class="container my-8 m-auto">
         <div class="carousel w-full ">
           <div id="slide1" class="carousel-item relative w-full">
-            <img class="w-[100%] h-[600px] rounded-[2.375rem]" src="Images/1.png" class="w-full" />
+            <img class="w-[100%] md:h-[600px] h-full rounded-2xl" src="Images/1.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle">❮</a> 
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
-            <div class="absolute bg-black lg:w-[566px] h-[165px] rounded-2xl -bottom-[200px] lg:bottom-8 lg:right-8 items-center text-center py-12 gap-y-8">
+             <div class="md:block hidden absolute bg-black lg:w-[566px] h-[165px] rounded-2xl lg:bottom-8 -bottom-[200px] lg:right-8 items-center text-center py-12 gap-y-8">
               <h1 class="text-[#FFFFFF] text-[24px]">Meet all the heroes from the field</h1>
-              <p class="text-[#FFFFFF99] text-[16px]">Some people say that you should never meet your heroes. What you've built them up to be in your mind.</p>
+              <p class="text-[#FFFFFF99] text-[16px]">A hero is an ordinary individual who finds the strength to persevere and endure in spite of overwhelming obstacles.</p>
             </div>
           </div> 
           <div id="slide2" class="carousel-item relative w-full">
-            <img class="w-[100%] h-[600px] rounded-[2.375rem]" src="Images/his-turf-picture-image_2633833.jpg" class="w-full" />
+            <img class="w-[100%] md:h-[600px] h-full rounded-2xl" src="Images/his-turf-picture-image_2633833.jpg" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a> 
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
-            <div class="absolute bg-black lg:w-[566px] h-[165px] rounded-2xl lg:bottom-8 -bottom-[200px] lg:right-8 items-center text-center py-12 gap-y-8">
+            <div class="md:block hidden absolute bg-black lg:w-[566px] h-[165px] rounded-2xl lg:bottom-8 -bottom-[200px] lg:right-8 items-center text-center py-12 gap-y-8">
               <h1 class="text-[#FFFFFF] text-[24px]">Meet all the heroes from the field</h1>
               <p class="text-[#FFFFFF99] text-[16px]">A hero is an ordinary individual who finds the strength to persevere and endure in spite of overwhelming obstacles.</p>
             </div>
           </div> 
       
       </div>
+      
+      <div class="md:hidden bg-black rounded-2xl -bottom-[200px] lg:bottom-8 lg:right-8 items-center text-center py-4 gap-y-8">
+        <h1 class="text-[#FFFFFF] text-[18px] text-center">Meet all the heroes from the field</h1>
+        <p class="text-[#FFFFFF99]">Some people say that you should never meet your heroes. What you've built them up to be in your mind.</p>
+      </div>
+
       </section>
     <!-- Hockey Banner Section End -->
 
     <!-- Professional Hockeys Club -->
+
     <section class="sec-2">
       <div class="container mx-auto my-12 justify-center w-4/5 pb-10 border-b-2">
           <div class="sec2-text-sec text-center mx-auto my-10">
               <h2 class="text-4xl font-extrabold mb-3">Professional Hockeys Club</h2>
               <p class="text-[#13131899] font-bold text-[16px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
-    <!-- Radial progress start -->
+   
             <div class="grid sm:grid-cols-4 grid-cols-1 border-t-2 mt-8 border-dotted bg-[#FFF] items-center text-center">
-      <!-- first -->
+     
       <div class="mt-8">
           <div class="radial-progress rotate-90 text-red-600" style="--value: 80;" role="progressbar"><span class="text-black -rotate-90">87%</span></div>
           <h2 class="mt-6 text-xl">Prayer Facility</h2>
           <p class="text-[#13131899] text-16px">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
       </div>
-      <!-- second -->
+     
       <div class="mt-8 ">
           <div class="radial-progress rotate-90 text-[#49D293]" style="--value: 86;" role="progressbar"><span class="text-black -rotate-90">95%</span></div>
           <h2 class="mt-6 text-xl">Experienced Coach</h2>
           <p class="text-[#13131899] text-[16px]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
       </div>
-      <!-- third -->
+     
       <div class=" mt-8">
           <div class="radial-progress rotate-90 text-[#FFB546]" style="--value: 84;" role="progressbar"><span class="text-black -rotate-90">90%</span></div>
 
           <h2 class="mt-6 text-xl">Senior Player</h2>
           <p class="text-[#13131899] text-[16px]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
       </div>
-      <!-- four -->
+      
       <div class="mt-8">
           <div class="radial-progress rotate-90 text-[#4C8DF1]" style="--value: 75;" role="progressbar"><span class="text-black -rotate-90">80%</span></div>
 
@@ -166,7 +170,7 @@
           <p class="text-[#13131899] text-[16px]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
       </div>
   </div>
-  <!-- Radial progress end -->
+ 
          
       </div>
   </section>
